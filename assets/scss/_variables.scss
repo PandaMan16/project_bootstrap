@@ -1,0 +1,13 @@
+$color0: #d21146;
+$color1: #222222;
+
+$theme-colors: (
+  "primary":    $color0,
+  "secondary":  $color1,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);

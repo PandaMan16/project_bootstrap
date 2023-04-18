@@ -1,0 +1,168 @@
+
+// Required
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+@import "../scss/variables";
+
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+
+
+// @import "bootstrap/scss/type";
+// @import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+// @import "bootstrap/scss/grid";
+// @import "bootstrap/scss/tables";
+// @import "bootstrap/scss/forms";
+// @import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+// @import "bootstrap/scss/dropdown";
+// @import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar"; // Requires nav
+// @import "bootstrap/scss/card";
+// @import "bootstrap/scss/breadcrumb";
+// @import "bootstrap/scss/accordion";
+// @import "bootstrap/scss/pagination";
+// @import "bootstrap/scss/badge";
+// @import "bootstrap/scss/alert";
+// @import "bootstrap/scss/progress";
+// @import "bootstrap/scss/list-group";
+// @import "bootstrap/scss/close";
+// @import "bootstrap/scss/toasts";
+// @import "bootstrap/scss/modal"; // Requires transitions
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/popover";
+// @import "bootstrap/scss/carousel";
+// @import "bootstrap/scss/spinners";
+// @import "bootstrap/scss/offcanvas"; // Requires transitions
+// @import "bootstrap/scss/placeholders";
+
+// Helpers
+// @import "bootstrap/scss/helpers";
+
+// Utilities
+@import "bootstrap/scss/utilities/api";
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700;900&family=Fraunces:wght@300;400;700&display=swap');
+
+body{
+  font-family: 'Barlow';
+  font-style: normal;
+}
+header {
+  height: 100vh;
+  background: url("../images/alice-dietrich-FwF_fKj5tBo-unsplash.jpg") no-repeat center;
+  background-size: cover;
+  // background-color: red;
+  .logo{
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+  }
+  nav > div{
+    & > a{
+      box-shadow: 5px 5px 0 #fffa;
+    }
+
+    .nav-link{
+      font-family: 'Barlow', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+    }
+  }
+  div { 
+    & > div > h1 {
+      font-family: 'Fraunces', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 5em;
+    }
+
+    & > div > a > span {
+      mask-image: url("../images/scrolldown.png");
+      mask-repeat: no-repeat;
+      mask-position: center;
+      width: 100px;
+      height: 100px;
+    }
+  }
+  @media screen and (max-width: 720px) {
+    #navbarNav{
+      height: 90vh!important;
+      background-color: var(--bs-primary)!important;
+      .text-secondary{
+        color: var(--bs-light)!important;
+      }
+    }
+  }
+}
+
+#awesome{
+  height: 90vh;
+  .ww{
+    .lbg{
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: 700;
+    }
+    .lte{
+      font-family: 'Fraunces';
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+  .news{
+    .icon{
+      background-image: url(../images/write.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+#square{
+  height: 100vh;
+  .image{
+    background: var(--img);
+  }
+  @media screen and (max-width: 720px) {
+    & > div > div {
+      background-color: var(--bs-light)!important;
+      color: var(--bs-secondary)!important;
+    }
+  }
+}
+#blog{
+  height: 100vh;
+  .ww{
+    .lbg{
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: 700;
+      z-index: -1;
+    }
+  }
+  .lte{
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 400;
+  }
+  .icon{
+    background-image: var(--img);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0 80px;
+  }
+}
+footer {
+  position: relative;
+  top: 25vh;
+  height: 90vh;
+  @media screen and (max-width: 720px) {
+    top: 125vh;
+  }
+}
